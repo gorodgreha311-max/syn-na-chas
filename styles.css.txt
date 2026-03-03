@@ -1,0 +1,248 @@
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #3730a3;
+    --secondary: #10b981;
+    --success: #059669;
+    --warning: #d97706;
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+    --shadow-lg: 0 20px 40px rgba(0,0,0,0.15);
+    --turquoise: #20c997; /* бирюзовый цвет для кнопки */
+}
+
+/* Темная тема */
+[data-bs-theme="dark"] {
+    --bg-light: #1f2937;
+    --bg-lighter: #374151;
+    --text-muted: #9ca3af;
+    --card-bg: #111827;
+}
+
+[data-bs-theme="dark"] .bg-light { background-color: var(--bg-light) !important; }
+[data-bs-theme="dark"] .navbar-light .navbar-nav .nav-link { color: rgba(255,255,255,0.8); }
+[data-bs-theme="dark"] .card { background-color: var(--card-bg); border-color: var(--bg-lighter); }
+
+/* Базовые стили */
+* { box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+
+/* Навигация */
+#main-nav {
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+#main-nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: var(--shadow-lg);
+}
+
+[data-bs-theme="dark"] #main-nav.scrolled {
+    background-color: rgba(31, 41, 55, 0.95) !important;
+}
+
+.navbar-brand { font-size: 1.5rem; }
+.nav-link {
+    font-weight: 500;
+    transition: all 0.3s;
+    padding: 0.5rem 1rem !important;
+}
+.nav-link:hover { color: var(--primary) !important; }
+
+/* Переключатель темы */
+.theme-toggle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.theme-icon-sun { display: block; }
+.theme-icon-moon { display: none; }
+
+[data-bs-theme="dark"] .theme-icon-sun { display: none; }
+[data-bs-theme="dark"] .theme-icon-moon { display: block; }
+
+.theme-toggle:hover { transform: scale(1.1); }
+
+/* Hero — фиолетовый оверлей восстановлен */
+.hero-section {
+    position: relative;
+    color: white;
+    padding-top: 80px; /* отступ, чтобы не перекрывалось навбаром */
+    background-image: url('https://avatars.mds.yandex.net/i?id=033b9e15196d42dd3f739b49b7784a677fa1b449-5167369-images-thumbs&n=13');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Фиолетовый градиент поверх фона */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(79,70,229,0.85), rgba(124,58,237,0.85));
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Бирюзовая кнопка с мерцанием */
+.btn-turquoise {
+    background-color: var(--turquoise);
+    border-color: var(--turquoise);
+    color: white;
+}
+
+.btn-turquoise:hover {
+    background-color: #1ba87e;
+    border-color: #1ba87e;
+    color: white;
+}
+
+.pulse-btn {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(32, 201, 151, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(32, 201, 151, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(32, 201, 151, 0);
+    }
+}
+
+/* Hover эффекты */
+.hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-lg) !important;
+}
+
+/* Шаги процесса */
+.step-number {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary), #7c3aed);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+    box-shadow: var(--shadow);
+    transition: all 0.3s;
+}
+
+.step-item:hover .step-number {
+    transform: scale(1.1);
+}
+
+/* Иконки услуг */
+.service-icon {
+    font-size: 4rem;
+    line-height: 1;
+    transition: transform 0.3s;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.2);
+}
+
+/* Карточка цен */
+.pricing-card {
+    border-radius: 25px;
+}
+
+/* Форма */
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25);
+}
+
+.form-control::placeholder {
+    color: rgba(0,0,0,0.4);
+}
+
+/* Подвал */
+#footer {
+    background: linear-gradient(135deg, #1f2937, #111827);
+    color: rgba(255,255,255,0.7);
+}
+
+.nav-link-footer {
+    color: rgba(255,255,255,0.7) !important;
+    transition: all 0.3s;
+    padding: 0.25rem 0;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.nav-link-footer:hover {
+    color: white !important;
+    transform: translateX(5px);
+}
+
+/* Кнопка наверх */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    display: none;
+    z-index: 1000;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+#scrollTopBtn.show, #scrollTopBtn:hover {
+    display: block;
+    transform: scale(1.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-section { text-align: center; }
+    .navbar-brand { font-size: 1.3rem; }
+    .display-3 { font-size: 2.5rem; }
+    .step-number { 
+        width: 60px; 
+        height: 60px; 
+        font-size: 1.5rem; 
+    }
+    .theme-toggle { 
+        margin-left: auto; 
+    }
+}
+
+/* Кастомные свойства Bootstrap для темной темы */
+@media (prefers-color-scheme: dark) {
+    [data-bs-theme="dark"] .navbar-light { 
+        background-color: rgba(31, 41, 55, 0.9) !important; 
+    }
+}

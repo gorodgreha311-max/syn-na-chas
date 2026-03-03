@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сын/Дочь на час - Помощь пожилым в Йошкар-Оле</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигационная панель с темной/светлой темой и бургер-меню -->
+    <nav id="main-nav" class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#home">
+                <i class="fas fa-heart me-2"></i>Сын/Дочь на час
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#problem">Проблемы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#process">Процесс</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#safety">Безопасность</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prices">Цены</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cta">Контакты</a></li>
+                </ul>
+                <!-- Переключатель темы -->
+                <button id="themeToggle" class="btn btn-outline-secondary ms-3 theme-toggle" title="Переключить тему">
+                    <i class="fas fa-sun theme-icon-sun"></i>
+                    <i class="fas fa-moon theme-icon-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Блок 1: Шапка (Hero) - фиолетовый оверлей восстановлен -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="display-3 fw-bold mb-4">Ваши родители снова звонят и спрашивают, как открыть Госуслуги?</h1>
+                    <p class="lead fs-4 mb-5">Я приеду к маме или папе, всё настрою и научу пользоваться телефоном. Берёте на себя заботу, я беру на себя технику.</p>
+                    <!-- Кнопка бирюзового цвета с мерцанием -->
+                    <a href="#cta" class="btn btn-turquoise btn-lg px-5 py-3 fs-5 shadow-lg pulse-btn">Заказать звонок (перезвоню через 5 минут)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 2: Проблема -->
+    <section id="problem" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">Знакомые проблемы?</h2>
+                    <p class="lead">Эти ситуации знакомы каждому, кто заботится о родителях на расстоянии</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 h-100 shadow-sm hover-lift">
+                        <div class="card-body text-center p-5">
+                            <i class="fas fa-stethoscope fa-3x text-danger mb-4"></i>
+                            <h4 class="fw-bold mb-3">Мама не может записаться к врачу?</h4>
+                            <p class="text-muted">Больше никаких звонков с просьбой помочь с Госуслугами</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 h-100 shadow-sm hover-lift">
+                        <div class="card-body text-center p-5">
+                            <i class="fas fa-file-medical fa-3x text-warning mb-4"></i>
+                            <h4 class="fw-bold mb-3">Папа потерял документы в телефоне?</h4>
+                            <p class="text-muted">Верну все важные файлы на место</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 h-100 shadow-sm hover-lift">
+                        <div class="card-body text-center p-5">
+                            <i class="fas fa-mobile-alt fa-3x text-primary mb-4"></i>
+                            <h4 class="fw-bold mb-3">Гаджеты пылятся в ящике?</h4>
+                            <p class="text-muted">Научу пользоваться современными смартфонами</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p class="display-6 fw-bold text-primary">Решу за один визит. Вы освободите время для работы</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 3: Услуги -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-4">Что я делаю</h2>
+                <p class="lead">Полная помощь с техникой за 1-2 часа</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">📱</div>
+                            <h5 class="fw-bold mb-3">Мессенджеры для внуков</h5>
+                            <p class="text-muted">Телеграм, WhatsApp, Skype — видео с внуками каждый день</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">🏥</div>
+                            <h5 class="fw-bold mb-3">Запись к врачу</h5>
+                            <p class="text-muted">Госуслуги и инфоматы — без очередей</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">🖨️</div>
+                            <h5 class="fw-bold mb-3">Оплата ЖКХ онлайн</h5>
+                            <p class="text-muted">Квитанции оплачиваются из дома</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">☁️</div>
+                            <h5 class="fw-bold mb-3">Фото в облако</h5>
+                            <p class="text-muted">Семейные воспоминания в безопасности</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">🛡️</div>
+                            <h5 class="fw-bold mb-3">Защита от мошенников</h5>
+                            <p class="text-muted">Антивирус + блокировка опасных сайтов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 4: Процесс -->
+    <section id="process" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-4">Как я работаю</h2>
+                <p class="lead">4 простых шага до спокойствия</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center step-item">
+                        <div class="step-number">1</div>
+                        <h5>Заявка</h5>
+                        <p>Звонок или форма на сайте</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center step-item">
+                        <div class="step-number">2</div>
+                        <h5>Приезд</h5>
+                        <p>В удобное время по Йошкар-Оле</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center step-item">
+                        <div class="step-number">3</div>
+                        <h5>Работа</h5>
+                        <p>Чай/кофе, 1-2 часа обучения</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center step-item">
+                        <div class="step-number">4</div>
+                        <h5>Результат</h5>
+                        <p>Родители всё умеют сами</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 5: Безопасность -->
+    <section id="safety" class="py-5 bg-warning bg-opacity-10">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-4">Ваша безопасность на первом месте</h2>
+                <p class="lead">Доверие через прозрачность</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow hover-lift text-center p-5">
+                        <i class="fas fa-id-card fa-4x text-success mb-4"></i>
+                        <h5>Паспорт при себе</h5>
+                        <p class="text-muted">Показываю документ, оставляю копию</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow hover-lift text-center p-5">
+                        <i class="fas fa-lock fa-4x text-danger mb-4"></i>
+                        <h5>Без банковских паролей</h5>
+                        <p class="text-muted">Только ЖКХ при необходимости</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow hover-lift text-center p-5">
+                        <i class="fas fa-video fa-4x text-primary mb-4"></i>
+                        <h5>Полный контроль</h5>
+                        <p class="text-muted">Видеосвязь с вами или соседи</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 6: Цены + Отзывы -->
+    <section id="prices" class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg p-5 text-center pricing-card">
+                        <h3 class="display-4 fw-bold text-primary mb-4">1500 ₽/час</h3>
+                        <ul class="list-unstyled mb-5">
+                            <li class="fs-4 mb-3"><i class="fas fa-check text-success me-2"></i>Выезд: 500 ₽</li>
+                            <li class="fs-4 mb-3"><i class="fas fa-check text-success me-2"></i>Бесплатно от 2 часов</li>
+                        </ul>
+                        <div class="alert alert-success fs-5">
+                            <strong>🎁 Акция:</strong> Приведи друга — скидка 20%!
+                        </div>
+                        <a href="#cta" class="btn btn-primary btn-lg mt-4 px-5">Заказать помощь</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="display-6 fw-bold mb-5 text-center">Что говорят клиенты</h3>
+                    <div id="reviewsCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card border-0 bg-primary bg-opacity-10">
+                                    <div class="card-body p-5">
+                                        <p class="fs-4 mb-4">"Наконец мама видит внуков каждый день!"</p>
+                                        <h5 class="fw-bold text-primary">— Ольга, 45 лет</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border-0 bg-success bg-opacity-10">
+                                    <div class="card-body p-5">
+                                        <p class="fs-4 mb-4">"Папа теперь сам оплачивает ЖКХ"</p>
+                                        <h5 class="fw-bold text-success">— Алексей, 39 лет</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 7: CTA + Контакты -->
+    <section id="cta" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <h2 class="display-4 fw-bold mb-4">Оставьте заявку прямо сейчас</h2>
+                    <p class="lead fs-4 mb-5">Позвоню через 5 минут, всё обсудим и успокоим</p>
+                    <form id="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control form-control-lg" id="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control form-control-lg" id="phone" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" id="message" rows="3" placeholder="Адрес родителей, особые пожелания"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-light btn-lg px-5 py-3 fs-5">Отправить заявку</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0 bg-light bg-opacity-10 backdrop-blur">
+                        <div class="card-body p-5">
+                            <h4 class="fw-bold mb-4">📞 Связаться со мной</h4>
+                            <div class="contact-item mb-4">
+                                <i class="fas fa-phone fa-2x text-success mb-3 d-block"></i>
+                                <div>+7 (8362) 12-34-56</div>
+                            </div>
+                            <div class="contact-item mb-4">
+                                <i class="fas fa-envelope fa-2x text-primary mb-3 d-block"></i>
+                                <div>syn-na-chas@yoshkar.ru</div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt fa-2x text-warning mb-3 d-block"></i>
+                                <div>Йошкар-Ола, выезд по всему городу</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал (кнопка "В начало страницы" удалена) -->
+    <footer id="footer" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-heart me-2"></i>Сын/Дочь на час
+                    </h5>
+                    <p>Помощь пожилым родителям с техникой. Спокойствие для вас, радость для родителей. Йошкар-Ола.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-3">Навигация</h6>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#home" class="nav-link-footer">Главная</a></li>
+                                <li><a href="#problem" class="nav-link-footer">Проблемы</a></li>
+                                <li><a href="#services" class="nav-link-footer">Услуги</a></li>
+                                <li><a href="#process" class="nav-link-footer">Процесс</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#safety" class="nav-link-footer">Безопасность</a></li>
+                                <li><a href="#prices" class="nav-link-footer">Цены</a></li>
+                                <li><a href="#cta" class="nav-link-footer">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <h6 class="fw-bold mb-3">Быстрый доступ</h6>
+                    <p>Выезд по всему городу • 1500₽/час • Ежедневно</p>
+                    <!-- Кнопка удалена -->
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2026 Сын/Дочь на час. Все права защищены. Йошкар-Ола.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#cta" class="text-decoration-none me-3">📞 Контакты</a>
+                    <a href="#prices" class="text-decoration-none">💰 Цены</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка наверх -->
+    <button id="scrollTopBtn" class="btn btn-primary rounded-circle shadow-lg" title="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
